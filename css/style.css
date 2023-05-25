@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: lcd;
+  src: url(../font/SUBWT___.ttf);
+}
+
+html {
+    font-size: 62.5%;
+}
+ 
+body {
+    background-color: black;
+}
+
+main {
+
+}
+
+main input{
+    display: grid;
+    grid-template-columns: 20rem;
+    width: 100%;
+    font-size: 3.5rem;
+    margin-bottom:10px;
+    background-color: black;
+    color: green;
+    text-align: right;
+    padding: 10px 4px 10px 4px;
+    font-family: lcd;
+    border: 1px solid yellow;
+    border-radius:4px;
+}
+
+main section#keyBoard {
+    /** Grid eller liknade */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.1rem;
+    padding: 0.1rem;
+}
+main section#keyBoard button {
+    border-radius: 4px;
+    width: 100%;
+    height: 5rem;
+    font-size: 4rem;
+    color:rgb(57, 250, 240);
+}
+main section#keyBoard button[id^='b'] {
+    color: inherit;
+}
+main section#clear {
+
+}
+
+@media (max-width: 767px) {
+    body {
+        background-color: black;
+    }
+
+    main {
+
+    }
+
+    main input{
+
+    }
+    main section#keyBoard {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 0.1rem;
+        padding: 0.1rem;
+    }
+    main section#keyBoard button {
+        border-radius: 4px;
+        width: 100%;
+        height: 5rem;
+        font-size: 4rem;
+        color:rgb(57, 250, 240);
+    }
+    main section#keyBoard button[id^='b'] {
+        color: inherit;
+    }
+}
+
+@media (max-width: 339px) {
+    main {
+
+    }
+
+}
